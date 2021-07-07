@@ -6,12 +6,13 @@ st.title('''
    Welcome to the first music recommendation !      
 ''')
 
-input = ['Bal musette', 'Jazz', 'Punk', 'Rock', 'Rap',
-         'RnB', 'Dancehall/Ragga', 'Reggaeton', 'Zouglou',
-         'Coupé-décalé', 'Logoby', 'Zouk', 'Disco', 'French Touch',
-         'Turntablism/platinisme', 'Tecktonik', 'Electro', 'Folk',
-         'Jazz', 'Pop rock', 'Reggae', 'Country', 'Blues',
-         'Rock garage', 'World', 'Ska', 'Raï', 'Gypsy pop', 'Tango', 'Opérette', 'Variété']
+# input = ['Bal musette', 'Jazz', 'Punk', 'Rock', 'Rap',
+#          'RnB', 'Dancehall/Ragga', 'Reggaeton', 'Zouglou',
+#          'Coupé-décalé', 'Logoby', 'Zouk', 'Disco', 'French Touch',
+#          'Turntablism/platinisme', 'Tecktonik', 'Electro', 'Folk',
+#          'Jazz', 'Pop rock', 'Reggae', 'Country', 'Blues',
+#          'Rock garage', 'World', 'Ska', 'Raï', 'Gypsy pop', 'Tango', 'Opérette', 'Variété']
+input = ['Rap', 'Electro', 'Rock', ]
 
 dic = {
     'in': input,
