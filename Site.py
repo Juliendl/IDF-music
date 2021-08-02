@@ -25,7 +25,7 @@ dic = {
     }
 }
 
-# user_input = st.text_input("50/50. Gimme a song", "Artist - Title")
+# user_input = st.text_input("Gimme a song", "Artist - Title")
 
 option = st.selectbox(
     'Tell me more about you. What is your style of music?',
