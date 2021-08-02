@@ -17,7 +17,7 @@ input = ['Default', 'Rap', 'Electro', 'Rock', ]
 dic = {
     'in': input,
     'out': {
-        'Default': ,
+        'Default': '',
         'Rock': 'Superbus, Kyo',
         'Rap': 'Booba, Nekfeu',
         'Electro': 'David Guetta',
