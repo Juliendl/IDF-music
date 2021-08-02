@@ -45,8 +45,6 @@ else:
 # for artiste in liste_artistes:
 #     name = st.button(artiste)
 
-if option == 'Default':
-    st.write('Choose a style !')
 
 if option == 'Rap':
     Booba = st.button('Booba')
