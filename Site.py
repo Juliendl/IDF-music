@@ -12,7 +12,7 @@ st.title('''
 #          'Turntablism/platinisme', 'Tecktonik', 'Electro', 'Folk',
 #          'Jazz', 'Pop rock', 'Reggae', 'Country', 'Blues',
 #          'Rock garage', 'World', 'Ska', 'Raï', 'Gypsy pop', 'Tango', 'Opérette', 'Variété']
-input = ['Rap', 'Electro', 'Rock', ]
+input = ['No choice', 'Rap', 'Electro', 'Rock', ]
 
 dic = {
     'in': input,
