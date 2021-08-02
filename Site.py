@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 st.title('''
-   Welcome to the first music recommendation !      
+   Welcome to the music recommendation system of IDF Music !      
 ''')
 
 # input = ['Bal musette', 'Jazz', 'Punk', 'Rock', 'Rap',
