@@ -42,6 +42,8 @@ st.write('Want to learn more about these?')
 #     name = st.button(artiste)
 
 if option == 'Default':
+    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    st.write('Try this one: [DKR](%s)' % url)
     st.write('Choose a style !')
 
 if option == 'Rap':
