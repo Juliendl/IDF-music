@@ -12,7 +12,7 @@ st.title('''
 #          'Turntablism/platinisme', 'Tecktonik', 'Electro', 'Folk',
 #          'Jazz', 'Pop rock', 'Reggae', 'Country', 'Blues',
 #          'Rock garage', 'World', 'Ska', 'Raï', 'Gypsy pop', 'Tango', 'Opérette', 'Variété']
-input = ['No choice', 'Rap', 'Electro', 'Rock', ]
+input = ['Default', 'Rap', 'Electro', 'Rock', ]
 
 dic = {
     'in': input,
@@ -41,7 +41,7 @@ st.write('Want to learn more about these?')
 # for artiste in liste_artistes:
 #     name = st.button(artiste)
 
-if option == 'No choice':
+if option == 'Default':
     st.write('Choose a style !')
 
 if option == 'Rap':
