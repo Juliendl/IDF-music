@@ -33,9 +33,12 @@ option = st.selectbox(
     dic['in'])
 
 st.cache()
-out = dic['out'][option]
-'Check for this: ', out
-st.write('Want to learn more about these?')
+if option == 'Default':
+    st.write('Choose a style !')
+else:
+   out = dic['out'][option]
+   'Check for this: ', out
+   st.write('Want to learn more about these?')
 
 # '''Show all results as buttons'''
 # liste_artistes = out.split(',')
