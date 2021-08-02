@@ -41,6 +41,9 @@ st.write('Want to learn more about these?')
 # for artiste in liste_artistes:
 #     name = st.button(artiste)
 
+if option == 'No choice':
+    st.write('Choose a style !')
+
 if option == 'Rap':
     Booba = st.button('Booba')
     Nekfeu = st.button('Nekfeu')
