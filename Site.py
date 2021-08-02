@@ -17,7 +17,7 @@ input = ['Rap', 'Electro', 'Rock', ]
 dic = {
     'in': input,
     'out': {
-        'Rock': 'Louise attaque, Superbus, Kyo',
+        'Rock': 'Superbus, Kyo',
         'Rap': 'Booba, Nekfeu',
         'Electro': 'David Guetta',
         'Variété': 'Vianney, Kendji Girac, GIMS'
