@@ -52,6 +52,12 @@ if option == 'Rap':
 if option == 'Rap' and Booba:
     url = "https://www.youtube.com/watch?v=Stet_4bnclk"
     st.write('Try this one: [DKR](%s)' % url)
+    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    st.write('Try this one: [DKR](%s)' % url)
+    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    st.write('Try this one: [DKR](%s)' % url)
+    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    st.write('Try this one: [DKR](%s)' % url)
 if option == 'Rap' and Nekfeu:
     url = "https://www.youtube.com/watch?v=YltjliK0ZeA"
     st.write('This one is cool: [On verra bien](%s)' % url)
