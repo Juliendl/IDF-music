@@ -50,15 +50,7 @@ if option == 'Rap':
     Booba = st.button('Booba')
     Nekfeu = st.button('Nekfeu')
 if option == 'Rap' and Booba:
-    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
-    url2 = "https://www.youtube.com/watch?v=Stet_4bnclk"
-    url3 = "https://www.youtube.com/watch?v=Stet_4bnclk"      
-    st.write('Try this one: [DKR](%s), [DKR](%s), [DKR](%s)' % url, url2, url3)
-    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
-    st.write('Try this one: [DKR](%s)' % url)
-    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
-    st.write('Try this one: [DKR](%s)' % url)
-    url = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    url = "https://www.youtube.com/watch?v=Stet_4bnclk"     
     st.write('Try this one: [DKR](%s)' % url)
 if option == 'Rap' and Nekfeu:
     url = "https://www.youtube.com/watch?v=YltjliK0ZeA"
