@@ -3,4 +3,4 @@ pandas
 numpy
 youtube-search-python
 spotipy
-sklearn.preprocessing
+sklearn
