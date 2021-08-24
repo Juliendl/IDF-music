@@ -4,4 +4,3 @@ numpy
 youtube-search-python
 spotipy
 sklearn.preprocessing
-json
