@@ -3,5 +3,5 @@ pandas
 numpy
 youtube-search-python
 spotipy
-sklearn
+sklearn.preprocessing
 json
