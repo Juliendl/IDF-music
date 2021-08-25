@@ -50,17 +50,29 @@ if option == 'Rap':
     Booba = st.button('Booba')
     Nekfeu = st.button('Nekfeu')
 if option == 'Rap' and Booba:
-    url = "https://www.youtube.com/watch?v=Stet_4bnclk"     
-    st.write('Try this one: [DKR](%s)' % url)
+    url1 = "https://www.youtube.com/watch?v=Stet_4bnclk"
+    url2 =  "https://www.youtube.com/watch?v=R3VhomP5b10"
+    url3 = "https://www.youtube.com/watch?v=hwtLqJyhS3Q"
+    url4 =  "https://www.youtube.com/watch?v=OXewKWKvva8"
+    url5 =  "https://www.youtube.com/watch?v=s4JbpWWV8sM&pp=sAQA"
+    st.write('These ones are among the biggest hits: [DKR](%s)' % url1, ', [Habibi](%s)' % url2, ', [92i Veyron](%s)' % url3, ', [Pinocchio(ft. Damso & Gato)](%s)' % url4, ', [Comme une étoile](%s)' % url5)
 if option == 'Rap' and Nekfeu:
-    url = "https://www.youtube.com/watch?v=YltjliK0ZeA"
-    st.write('This one is cool: [On verra bien](%s)' % url)
+    url1 = "https://www.youtube.com/watch?v=YltjliK0ZeA&pp=sAQA"
+    url2 =  "https://www.youtube.com/watch?v=Z68u6dJqoI0&pp=sAQA"
+    url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
+    url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
+    url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
+    st.write('These ones are among the biggest hits: [On verra bien](%s)' % url1, ', [Ma Dope(ft. SPri Noir)](%s)' % url2, ', [Elle pleut(ft. Nemir)](%s)' % url3, ', ["Le regard des gens(ft. Nemir, 2zer, Mekra, Doums)"](%s)' % url4, ', [Cheum](%s)' % url5)
 
 if option == 'Electro':
     DavidGuetta = st.button('David Guetta')
 if option == 'Electro' and DavidGuetta:
-    url = "https://www.youtube.com/watch?v=JRfuAukYTKg"
-    st.write('The biggest hit is: [Titanium(ft. SIA)](%s)' % url)
+    url1 = "https://www.youtube.com/watch?v=JRfuAukYTKg"
+    url2 =  "https://www.youtube.com/watch?v=NUVCQXMUVnI"
+    # url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
+    # url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
+    # url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
+    st.write('These ones are among the biggest hits: [Titanium(ft. SIA)](%s)' % url1, ', [Memories(ft. Kid Cudi)](%s)' % url2)
 
 if option == 'Rock':
     Kyo = st.button('Kyo')
