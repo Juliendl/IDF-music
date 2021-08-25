@@ -160,12 +160,22 @@ option = st.selectbox(
 st.cache()
 if option == 'Default':
     st.write('Choose a style !')
+    
 elif option == 'Any song':
+    # User can write a song to search
     st.write('Write your song')
+    entry = st.text_input("Enter a song to search for its similarities", "Type here ...")
+    if(st.button('Submit')):
+    songToSearch = str(entry)
+    Similarities(songToSearch)
+    
 else:
+    # Selection among pre-defined songs
    out = dic['out'][option]
    'Check for this: ', out
    st.write('Want to learn more about these?')
+
+
 
 # '''Show all results as buttons'''
 # liste_artistes = out.split(',')
