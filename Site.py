@@ -151,87 +151,108 @@ st.title('''
 #          'Turntablism/platinisme', 'Tecktonik', 'Electro', 'Folk',
 #          'Jazz', 'Pop rock', 'Reggae', 'Country', 'Blues',
 #          'Rock garage', 'World', 'Ska', 'Raï', 'Gypsy pop', 'Tango', 'Opérette', 'Variété']
-input = ['Default', 'Any song', 'Rap', 'Electro', 'Rock', ]
 
-dic = {
-    'in': input,
-    'out': {
-        'Default': '',
-        'Any song': '',
-        'Rock': 'Superbus, Kyo',
-        'Rap': 'Booba, Nekfeu',
-        'Electro': 'David Guetta',
-        'Variété': 'Vianney, Kendji Girac, GIMS'
+# Actuel version 1.0
 
-    }
-}
-
-# user_input = st.text_input("Gimme a song", "Artist - Title")
-
-option = st.selectbox(
-    'Tell me more about you. What is your style of music?',
-    dic['in'])
-
+# User can write a song to search
 st.cache()
-if option == 'Default':
-    st.write('Choose a style !')
-elif option == 'Any song':
-    # User can write a song to search
-    st.write('Write your song')
-    entry = st.text_input("Enter a song to search for its similarities", "Type here ...")
-    if st.button('Submit'):
-        songToSearch = str(entry)
-        toprint = similarities(songToSearch)
-        st.write(toprint[0])
-        st.write(toprint[1])
-        st.write(toprint[2])
-        st.write(toprint[3])
-else:
-    # Selection among pre-defined songs
-    out = dic['out'][option]
-    'Check for this: ', out
-    st.write('Want to learn more about these?')
-
-# '''Show all results as buttons'''
-# liste_artistes = out.split(',')
-# for artiste in liste_artistes:
-#     name = st.button(artiste)
+st.write('Write your song')
+entry = st.text_input("Enter a song to search for its similarities in French", "Artist - song")
+if st.button('Submit'):
+    songToSearch = str(entry)
+    toprint = similarities(songToSearch)
+    st.write(toprint[0])
+    st.write(toprint[1])
+    st.write(toprint[2])
+    st.write(toprint[3])
 
 
-if option == 'Rap':
-    Booba = st.button('Booba')
-    Nekfeu = st.button('Nekfeu')
-if option == 'Rap' and Booba:
-    url1 = "https://www.youtube.com/watch?v=Stet_4bnclk"
-    url2 =  "https://www.youtube.com/watch?v=R3VhomP5b10"
-    url3 = "https://www.youtube.com/watch?v=hwtLqJyhS3Q"
-    url4 =  "https://www.youtube.com/watch?v=OXewKWKvva8"
-    url5 =  "https://www.youtube.com/watch?v=s4JbpWWV8sM&pp=sAQA"
-    st.write('These ones are among the biggest hits: [DKR](%s)' % url1, ', [Habibi](%s)' % url2, ', [92i Veyron](%s)' % url3, ', [Pinocchio(ft. Damso & Gato)](%s)' % url4, ', [Comme une étoile](%s)' % url5)
-if option == 'Rap' and Nekfeu:
-    url1 = "https://www.youtube.com/watch?v=YltjliK0ZeA&pp=sAQA"
-    url2 =  "https://www.youtube.com/watch?v=Z68u6dJqoI0&pp=sAQA"
-    url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
-    url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
-    url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
-    st.write('These ones are among the biggest hits: [On verra bien](%s)' % url1, ', [Ma Dope(ft. SPri Noir)](%s)' % url2, ', [Elle pleut(ft. Nemir)](%s)' % url3, ', ["Le regard des gens(ft. Nemir, 2zer, Mekra, Doums)"](%s)' % url4, ', [Cheum](%s)' % url5)
 
-if option == 'Electro':
-    DavidGuetta = st.button('David Guetta')
-if option == 'Electro' and DavidGuetta:
-    url1 = "https://www.youtube.com/watch?v=JRfuAukYTKg"
-    url2 =  "https://www.youtube.com/watch?v=NUVCQXMUVnI"
-    # url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
-    # url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
-    # url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
-    st.write('These ones are among the biggest hits: [Titanium(ft. SIA)](%s)' % url1, ', [Memories(ft. Kid Cudi)](%s)' % url2)
 
-if option == 'Rock':
-    Kyo = st.button('Kyo')
-    Superbus = st.button('Superbus')
-if option == 'Rock' and Superbus:
-    url = "https://www.youtube.com/watch?v=CQPNj38WscM"
-    st.write('Try this: [Butterfly](%s)' % url)
-if option == 'Rock' and Kyo:
-    url = "https://www.youtube.com/watch?v=hWXYnW2Um68"
-    st.write('This song was a hit: [Le Graal](%s)' % url)
+
+# Base version, need upgrade
+
+# input = ['Default', 'Any song', 'Rap', 'Electro', 'Rock', ]
+# dic = {
+#     'in': input,
+#     'out': {
+#         'Default': '',
+#         'Any song': '',
+#         'Rock': 'Superbus, Kyo',
+#         'Rap': 'Booba, Nekfeu',
+#         'Electro': 'David Guetta',
+#         'Variété': 'Vianney, Kendji Girac, GIMS'
+
+#     }
+# }
+        
+
+# # user_input = st.text_input("Gimme a song", "Artist - Title")
+
+# option = st.selectbox(
+#     'Tell me more about you. What is your style of music?',
+#     dic['in'])
+
+# st.cache()
+# if option == 'Default':
+#     st.write('Choose a style !')
+# elif option == 'Any song':
+#     # User can write a song to search
+#     st.write('Write your song')
+#     entry = st.text_input("Enter a song to search for its similarities", "Type here ...")
+#     if st.button('Submit'):
+#         songToSearch = str(entry)
+#         toprint = similarities(songToSearch)
+#         st.write(toprint[0])
+#         st.write(toprint[1])
+#         st.write(toprint[2])
+#         st.write(toprint[3])
+# else:
+#     # Selection among pre-defined songs
+#     out = dic['out'][option]
+#     'Check for this: ', out
+#     st.write('Want to learn more about these?')
+
+# # '''Show all results as buttons'''
+# # liste_artistes = out.split(',')
+# # for artiste in liste_artistes:
+# #     name = st.button(artiste)
+
+
+# if option == 'Rap':
+#     Booba = st.button('Booba')
+#     Nekfeu = st.button('Nekfeu')
+# if option == 'Rap' and Booba:
+#     url1 = "https://www.youtube.com/watch?v=Stet_4bnclk"
+#     url2 =  "https://www.youtube.com/watch?v=R3VhomP5b10"
+#     url3 = "https://www.youtube.com/watch?v=hwtLqJyhS3Q"
+#     url4 =  "https://www.youtube.com/watch?v=OXewKWKvva8"
+#     url5 =  "https://www.youtube.com/watch?v=s4JbpWWV8sM&pp=sAQA"
+#     st.write('These ones are among the biggest hits: [DKR](%s)' % url1, ', [Habibi](%s)' % url2, ', [92i Veyron](%s)' % url3, ', [Pinocchio(ft. Damso & Gato)](%s)' % url4, ', [Comme une étoile](%s)' % url5)
+# if option == 'Rap' and Nekfeu:
+#     url1 = "https://www.youtube.com/watch?v=YltjliK0ZeA&pp=sAQA"
+#     url2 =  "https://www.youtube.com/watch?v=Z68u6dJqoI0&pp=sAQA"
+#     url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
+#     url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
+#     url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
+#     st.write('These ones are among the biggest hits: [On verra bien](%s)' % url1, ', [Ma Dope(ft. SPri Noir)](%s)' % url2, ', [Elle pleut(ft. Nemir)](%s)' % url3, ', ["Le regard des gens(ft. Nemir, 2zer, Mekra, Doums)"](%s)' % url4, ', [Cheum](%s)' % url5)
+
+# if option == 'Electro':
+#     DavidGuetta = st.button('David Guetta')
+# if option == 'Electro' and DavidGuetta:
+#     url1 = "https://www.youtube.com/watch?v=JRfuAukYTKg"
+#     url2 =  "https://www.youtube.com/watch?v=NUVCQXMUVnI"
+#     # url3 = "https://www.youtube.com/watch?v=cBKGKkQnI94"
+#     # url4 =  "https://www.youtube.com/watch?v=V_S-bDdY1lA"
+#     # url5 =  "https://www.youtube.com/watch?v=eZC2Ohdk-wI"
+#     st.write('These ones are among the biggest hits: [Titanium(ft. SIA)](%s)' % url1, ', [Memories(ft. Kid Cudi)](%s)' % url2)
+
+# if option == 'Rock':
+#     Kyo = st.button('Kyo')
+#     Superbus = st.button('Superbus')
+# if option == 'Rock' and Superbus:
+#     url = "https://www.youtube.com/watch?v=CQPNj38WscM"
+#     st.write('Try this: [Butterfly](%s)' % url)
+# if option == 'Rock' and Kyo:
+#     url = "https://www.youtube.com/watch?v=hWXYnW2Um68"
+#     st.write('This song was a hit: [Le Graal](%s)' % url)
