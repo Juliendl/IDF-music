@@ -110,7 +110,7 @@ def similarities(songToSearch, k=4):
     # Select parameters for the analysis
     col = ['acousticness', 'danceability', 'energy', 'instrumentalness', 'liveness', 'speechiness', 'valence']
     dfSongs, func = pd.read_csv('final.csv'), knnQuery
-    del dfSongs["Unnamed: 0"]
+#     del dfSongs["Unnamed: 0"]
 
     similarSongs = querySimilars2(dfSongs, col, dfResult, func, k)
 
